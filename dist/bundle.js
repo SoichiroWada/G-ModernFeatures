@@ -7,26 +7,121 @@
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/data.js"
+/*!*********************!*\
+  !*** ./src/data.js ***!
+  \*********************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ users),\n/* harmony export */   getPremUsers: () => (/* binding */ getPremUsers)\n/* harmony export */ });\nconst users = [\n  { name: 'mario', premium: true },\n  { name: 'luigi', premium: false },\n  { name: 'yoshi', premium: true },\n  { name: 'toad', premium: true },\n  { name: 'peach', premium: false }\n];\n\n// export default users;\n\nconst getPremUsers = (users) => {\n  return users.filter(user => user.premium);\n};\n\n\n\n//# sourceURL=webpack://g-modernfeatures/./src/data.js?\n}");
+
+/***/ },
+
+/***/ "./src/dom.js"
+/*!********************!*\
+  !*** ./src/dom.js ***!
+  \********************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   addTitle: () => (/* binding */ addTitle),\n/* harmony export */   contact: () => (/* binding */ contact),\n/* harmony export */   styleBody: () => (/* binding */ styleBody)\n/* harmony export */ });\nconsole.log('dom file');\n\nconst body = document.querySelector('body');\n\nconst styleBody = () => {\n    body.style.background = 'peachpuff';\n};\n\nconst addTitle = (text) => {\n    const title = document.createElement('h1');\n    title.textContent = text;\n    body.appendChild(title)\n};\n\nconst contact = 'mario@thenetninja.co.uk';\n\n\n\n//# sourceURL=webpack://g-modernfeatures/./src/dom.js?\n}");
+
+/***/ },
 
 /***/ "./src/index.js"
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-() {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("{throw new Error(\"Module parse failed: 'import' and 'export' may appear only with 'sourceType: module' (5:0)\\nFile was parsed as module type 'javascript/dynamic'.\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n  4 | // import './dom';\\n> 5 | import { styleBody, addTitle, contact } from './dom';\\n    | ^\\n  6 | \");\n\n//# sourceURL=webpack://g-modernfeatures/./src/index.js?\n}");
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./dom */ \"./src/dom.js\");\n/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./data */ \"./src/data.js\");\n\n\n\nconsole.log('index.js file');\n\n(0,_dom__WEBPACK_IMPORTED_MODULE_0__.addTitle)('hello, world from index.js');\n(0,_dom__WEBPACK_IMPORTED_MODULE_0__.styleBody)();\n\nconsole.log(_dom__WEBPACK_IMPORTED_MODULE_0__.contact);\n\nconst premUsers = (0,_data__WEBPACK_IMPORTED_MODULE_1__.getPremUsers)(_data__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\nconsole.log(_data__WEBPACK_IMPORTED_MODULE_1__[\"default\"], premUsers);\n\n//# sourceURL=webpack://g-modernfeatures/./src/index.js?\n}");
 
 /***/ }
 
 /******/ 	});
 /************************************************************************/
+/******/ 	// The module cache
+/******/ 	const __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		const cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		const module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		if (!(moduleId in __webpack_modules__)) {
+/******/ 			delete __webpack_module_cache__[moduleId];
+/******/ 			const e = new Error("Cannot find module '" + moduleId + "'");
+/******/ 			e.code = 'MODULE_NOT_FOUND';
+/******/ 			throw e;
+/******/ 		}
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter/value functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			if(Array.isArray(definition)) {
+/******/ 				var i = 0;
+/******/ 				while(i < definition.length) {
+/******/ 					var key = definition[i++];
+/******/ 					var binding = definition[i++];
+/******/ 					if(!__webpack_require__.o(exports, key)) {
+/******/ 						if(binding === 0) {
+/******/ 							Object.defineProperty(exports, key, { enumerable: true, value: definition[i++] });
+/******/ 						} else {
+/******/ 							Object.defineProperty(exports, key, { enumerable: true, get: binding });
+/******/ 						}
+/******/ 					} else if(binding === 0) { i++; }
+/******/ 				}
+/******/ 			} else {
+/******/ 				for(var key in definition) {
+/******/ 					if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 						Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 					}
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/************************************************************************/
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	// This entry module doesn't tell about it's top-level declarations so it can't be inlined
-/******/ 	let __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./src/index.js"]();
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	let __webpack_exports__ = __webpack_require__("./src/index.js");
 /******/ 	
 /******/ })()
 ;

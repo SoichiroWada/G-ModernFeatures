@@ -12,7 +12,6 @@ const addTitle = (text) => {
     body.appendChild(title)
 };
 
-// styleBody()
-// addTitle('hello, world from dom file')
+const contact = 'mario@thenetninja.co.uk';
 
 export { styleBody, addTitle, contact };
