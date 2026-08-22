@@ -15,7 +15,7 @@
   \**********************/
 () {
 
-eval("{const greet = name => {\n  console.log(`hello ${name}`);\n};\n\ngreet('mario');\ngreet('luigi');\ngreet('link');\ngreet('lelelenoogisan');\ngreet('Water Melon')\n\n\n//# sourceURL=webpack://g-modernfeatures/./src/index.js?\n}");
+eval("{throw new Error(\"Module parse failed: 'import' and 'export' may appear only with 'sourceType: module' (5:0)\\nFile was parsed as module type 'javascript/dynamic'.\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n  4 | // import './dom';\\n> 5 | import { styleBody, addTitle, contact } from './dom';\\n    | ^\\n  6 | \");\n\n//# sourceURL=webpack://g-modernfeatures/./src/index.js?\n}");
 
 /***/ }
 
@@ -24,7 +24,7 @@ eval("{const greet = name => {\n  console.log(`hello ${name}`);\n};\n\ngreet('ma
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	// This entry module doesn't tell about it's top-level declarations so it can't be inlined
 /******/ 	let __webpack_exports__ = {};
 /******/ 	__webpack_modules__["./src/index.js"]();
 /******/ 	
