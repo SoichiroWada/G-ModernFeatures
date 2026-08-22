@@ -7,11 +7,14 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "babel":"node_modules/.bin/babel src/index.js -w -o dist/assets/bundle.js"
+    "babel": "node_modules/.bin/babel src/index.js -w -o dist/assets/bundle.js",
+    "webpack":"node_modules/.bin/webpack"
   },
   "devDependencies": {
     "@babel/cli": "^8.0.4",
     "@babel/core": "^8.0.1",
-    "@babel/preset-env": "^8.0.2"
+    "@babel/preset-env": "^8.0.2",
+    "webpack": "^5.109.2",
+    "webpack-cli": "^7.2.2"
   }
 }

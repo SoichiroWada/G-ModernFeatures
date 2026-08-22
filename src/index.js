@@ -7,9 +7,3 @@ greet('luigi');
 greet('link');
 greet('lelelenoogisan');
 greet('Water Melon')
-
-class User {
-    constructor(){
-        this.score = 0;
-    }
-}
