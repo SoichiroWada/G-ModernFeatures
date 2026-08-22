@@ -4,7 +4,8 @@ const users = [
   { name: 'yoshi', premium: true },
   { name: 'toad', premium: true },
   { name: 'peach', premium: false },
-  { name: 'Bengi', premium: true }
+  { name: 'Bengi', premium: true },
+  { name: 'Cruise', premium: true }
 ];
 
 // export default users;
