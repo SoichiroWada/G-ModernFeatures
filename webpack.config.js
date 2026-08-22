@@ -1,18 +1,3 @@
-// const path = require('path');
-
-// module.exports = {
-//     entry: './src/index.js',
-//     output: {
-//         path: path.resolve(__dirname, 'dist/assets'),
-//         filename: 'bundle.js'
-//     },
-//     mode: 'development',
-//     devServer: {
-//         contentBase:path.resolve(__dirname, 'dist'),
-//         publicPath: '/assets/'
-//     }
-// };
-
 const path = require('path');
 
 module.exports = {
@@ -31,6 +16,7 @@ module.exports = {
         devMiddleware: {
             publicPath: '/assets/'
         },
+        host:'0.0.0.0',
         port: 8080,
         open: true
     }

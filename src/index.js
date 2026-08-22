@@ -11,3 +11,4 @@ console.log(contact);
 const premUsers = getPremUsers(users);
 console.log(users, premUsers);
 console.log('Burietta')
+console.log('Vinata Rattata')
