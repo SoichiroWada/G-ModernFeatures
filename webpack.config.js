@@ -9,6 +9,19 @@ module.exports = {
         publicPath: '/assets/'
     },
 
+    module: {
+        rules: [{
+            test: /\.js$/,
+            exclude: /node_modules/,
+            use: {
+                loader: 'babel-loader',
+                options: {
+                    presets: ['@babel/preset-env']
+                }
+            }
+        }]
+    },
+
     watchOptions: {
         poll: 1000,
         ignored: /node_modules/
@@ -24,19 +37,6 @@ module.exports = {
 
         devMiddleware: {
             publicPath: '/assets/'
-        },
-
-        module: {
-            rules: [{
-                test: /\.js$/,
-                exclude: /node_modules/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: ['@babel/preset-env']
-                    }
-                }
-            }]
         },
 
         host: '0.0.0.0',

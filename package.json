@@ -4,9 +4,7 @@
   "description": "",
   "license": "ISC",
   "author": "",
-  "main": "index.js",
   "scripts": {
-    "babel": "babel src/index.js -w -o dist/assets/bundle.js",
     "build": "webpack --mode production",
     "serve": "webpack serve --mode development"
   },
