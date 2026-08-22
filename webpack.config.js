@@ -24,8 +24,6 @@ module.exports = {
         publicPath: '/assets/'
     },
 
-    mode: 'development',
-
     devServer: {
         static: {
             directory: path.resolve(__dirname, 'dist')
