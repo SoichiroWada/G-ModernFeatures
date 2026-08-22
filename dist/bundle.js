@@ -26,7 +26,7 @@ eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpa
   \********************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   addTitle: () => (/* binding */ addTitle),\n/* harmony export */   contact: () => (/* binding */ contact),\n/* harmony export */   styleBody: () => (/* binding */ styleBody)\n/* harmony export */ });\nconsole.log('dom file');\n\nconst body = document.querySelector('body');\n\nconst styleBody = () => {\n    body.style.background = 'peachpuff';\n};\n\nconst addTitle = (text) => {\n    const title = document.createElement('h1');\n    title.textContent = text;\n    body.appendChild(title)\n};\n\nconst contact = 'mario@thenetninja.co.uk';\n\n\n\n//# sourceURL=webpack://g-modernfeatures/./src/dom.js?\n}");
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   addTitle: () => (/* binding */ addTitle),\n/* harmony export */   contact: () => (/* binding */ contact),\n/* harmony export */   styleBody: () => (/* binding */ styleBody)\n/* harmony export */ });\nconsole.log('dom file');\n\nconst body = document.querySelector('body');\n\nconst styleBody = () => {\n    body.style.background = 'skyblue';\n};\n\nconst addTitle = (text) => {\n    const title = document.createElement('h2');\n    title.textContent = text;\n    body.appendChild(title)\n};\n\nconst contact = 'mario@thenetninja.co.uk';\n\n\n\n//# sourceURL=webpack://g-modernfeatures/./src/dom.js?\n}");
 
 /***/ },
 
