@@ -26,9 +26,23 @@ module.exports = {
             publicPath: '/assets/'
         },
 
+        module: {
+            rules: [{
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-env']
+                    }
+                }
+            }]
+        },
+
         host: '0.0.0.0',
         port: 8080,
         open: false,
         liveReload: true
     }
 };
+

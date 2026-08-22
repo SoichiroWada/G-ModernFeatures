@@ -5,7 +5,9 @@ const users = [
   { name: 'toad', premium: true },
   { name: 'peach', premium: false },
   { name: 'Bengi', premium: true },
-  { name: 'Cruise', premium: true }
+  { name: 'Cruise', premium: true },
+  { name: 'Brian', premium: true },
+  { name: 'Tom', premium: true }
 ];
 
 // export default users;

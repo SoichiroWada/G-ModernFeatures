@@ -12,6 +12,6 @@ const addTitle = (text) => {
     body.appendChild(title)
 };
 
-const contact = 'mario@thenetninja.co.uk';
+const contact = 'marinda@thenetninja.co.jp';
 
 export { styleBody, addTitle, contact };
