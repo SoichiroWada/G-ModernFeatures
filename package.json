@@ -6,6 +6,7 @@
   "author": "",
   "scripts": {
     "build": "webpack --mode production",
+    "watch": "webpack --mode development --watch",
     "serve": "webpack serve --mode development"
   },
   "devDependencies": {
